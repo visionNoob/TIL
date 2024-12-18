@@ -31,3 +31,7 @@ class Solution:
                     repeat = 0
 
         return sol
+
+
+# Time: O(n)
+# Space: O(n)

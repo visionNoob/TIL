@@ -24,7 +24,6 @@ class Solution:
 class Solution:
     def vowelStrings(self, words: List[str], queries: List[List[int]]) -> List[int]:
         vowels = {"a", "e", "i", "o", "u"}
-        prefix_sum = [0]
         vowel_bools = [1 if w[0] in vowels and w[-1] in vowels else 0 for w in words]
         prefix_sum = [0] + list(accumulate(vowel_bools))
 

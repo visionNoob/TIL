@@ -24,61 +24,38 @@ class Translator:
 
     def translate_subtitle_block(
         self,
-        block: List[str],
         model: str,
         system_prompt: str,
         user_prompt: str,
+        reference_str: str,
     ) -> List[str]:
         """
-        Translates a single subtitle block using the OpenAI API, while preserving
+        Translates multiple subtitle blocks using the OpenAI API in batch, while preserving
         sequence numbers, time ranges, and empty lines.
+
+        Args:
+            blocks (List[List[str]]): List of subtitle blocks to translate.
+            model (str): The model to use for translation.
+            system_prompt (str): The system prompt to guide translation.
+            user_prompt (str): The user prompt to guide translation.
+
+        Returns:
+            List[List[str]]: Translated subtitle blocks.
         """
 
-        translated_block = []
-        dialogue_lines = []
+        # Batch request to the translation API
+        response = self.create_chat_completion_request(
+            model=model,
+            system_prompt=system_prompt,
+            user_prompt=user_prompt,
+            text=reference_str,
+        )
+        translated_text = response.choices[0].message.content.strip()
 
-        # 1) Separate dialogue lines from sequence/time info
-        for line in block:
-            if re.match(r"^\d+$", line.strip()):
-                # Subtitle sequence number
-                translated_block.append(line)
-            elif re.match(
-                r"^\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}", line.strip()
-            ):
-                # Time range
-                translated_block.append(line)
-            elif line.strip() == "":
-                # Empty lines
-                translated_block.append(line)
-            else:
-                # Actual dialogue
-                dialogue_lines.append(line.strip())
+        # Split the translated text back into lines
+        # translated_lines = translated_text.split("\n")
 
-        # 2) Translate dialogue if present
-        if dialogue_lines:
-            to_translate_text = "\n".join(dialogue_lines)
-            response = self.create_chat_completion_request(
-                model=model,
-                system_prompt=system_prompt,
-                user_prompt=user_prompt,
-                text=to_translate_text,
-            )
-            translated_text = response.choices[0].message.content.strip()
-
-            # Split the translated text back into lines
-            translated_lines = translated_text.split("\n")
-
-            # Adjust the number of translated lines to match the original dialogue line count
-            if len(translated_lines) < len(dialogue_lines):
-                translated_lines += [""] * (len(dialogue_lines) - len(translated_lines))
-            elif len(translated_lines) > len(dialogue_lines):
-                translated_lines = translated_lines[: len(dialogue_lines)]
-
-            # 3) Append the translated dialogue
-            for line_t in translated_lines:
-                translated_block.append(line_t + "\n")
-
-        return translated_block
+        return translated_text
 
     def create_chat_completion_request(
         self, model: str, system_prompt: str, user_prompt: str, text: str
@@ -88,21 +65,19 @@ class Translator:
         """
         # system_prompt 에 extra_instruction 을 덧붙인다.
         system_content = system_prompt + "\n\n"  # 구분용 공백
-
+        # text = "".join( ["".join(x) for x in self.subtitles][:10])
         messages = [
             {"role": "system", "content": system_content},
             {
                 "role": "user",
-                "content": (
-                    f"{user_prompt}\n\n" f"--- Target to Translate ---\n{text}"
-                ),
+                "content": (f"{user_prompt}\n\n" f"\n{text}"),
             },
         ]
-
+        #
         return self.client.chat.completions.create(
             model=model,
             messages=messages,
-            temperature=0.2,
+            temperature=0.1,
         )
 
     def merge_subtitles(self, subtitles: List[List[str]]) -> List[str]:
@@ -124,24 +99,87 @@ class Translator:
         merged_lines = "".join(merged_lines)
         return merged_lines
 
+    def parse_subtitle_to_list(self, subtitle_text):
+        """
+        Parse subtitle text into a list of lists where each sublist contains:
+        [index, time_range, text]
+        Each element includes a trailing newline as required.
+
+        :param subtitle_text: str, subtitle content in SRT format
+        :return: list of lists, formatted subtitle entries
+        """
+        # Split the text by lines
+        lines = subtitle_text.split("\n")
+
+        # Initialize variables
+        parsed_data = []
+        temp_entry = []
+
+        for line in lines:
+            if line.isdigit():  # Start of a new entry
+                if temp_entry:
+                    parsed_data.append(temp_entry)
+                temp_entry = [line + "\n"]  # Add index with a newline
+            elif "-->" in line:  # Time range line
+                temp_entry.append(line + "\n")  # Add time range with a newline
+            else:  # Text content
+                if len(temp_entry) < 3:
+                    temp_entry.append(line + "\n")  # First line of content
+                else:
+                    temp_entry[2] += line + "\n"  # Append additional content lines
+
+        # Append the last entry if it exists
+        if temp_entry:
+            parsed_data.append(temp_entry)
+
+        return parsed_data
+
     def translate(
-        self, model: str, system_prompt: str, user_prompt: str, progress=tqdm
+        self,
+        model: str,
+        system_prompt: str,
+        user_prompt: str,
+        progress=tqdm,
+        batch_size: int = 10,
     ):
+        """
+        Translate subtitles using batch processing.
 
-        translated_blocks: List[List[str]] = [[] for _ in range(len(self.subtitles))]
+        Args:
+            model (str): The model to use for translation.
+            system_prompt (str): The system prompt to guide translation.
+            user_prompt (str): The user prompt to guide translation.
+            batch_size (int): The number of subtitle blocks to process per batch.
+            progress (tqdm): Progress bar (default: tqdm).
 
-        for i in progress.tqdm(
-            range(len(self.subtitles)), desc="Translating with Sliding Window"
-        ):
-            new_translated_block = self.translate_subtitle_block(
-                block=self.subtitles[i],
+        Returns:
+            Merged subtitles after translation.
+        """
+        # Prepare the results container
+        translated_blocks = self.subtitles
+
+        # Split the subtitles into batches
+        for start_idx in progress.tqdm(range(0, len(self.subtitles), batch_size)):
+
+            # Determine the end index of the current batch
+            end_idx = min(start_idx + batch_size, len(self.subtitles))
+            reference_str = "".join(
+                ["".join(x) for x in self.subtitles[start_idx:end_idx]]
+            )
+
+            # Translate the current batch of subtitles
+            translated_batch = self.translate_subtitle_block(
                 model=model,
                 system_prompt=system_prompt,
                 user_prompt=user_prompt,
+                reference_str=reference_str,
             )
+            translated_batch = self.parse_subtitle_to_list(translated_batch)
+            # Store the translated results in the correct indices
+            for batch_idx, translated_block in enumerate(translated_batch):
+                translated_blocks[start_idx + batch_idx] = translated_block
 
-            translated_blocks[i] = new_translated_block
-
+        # Merge all translated subtitle blocks
         return self.merge_subtitles(translated_blocks)
 
     def split_srt_into_subtitles(self, lines: List[str]) -> List[List[str]]:

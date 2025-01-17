@@ -1,0 +1,520 @@
+1
+00:00:00,060 --> 00:00:05,700
+hello friends this is the next video on recurrence relation and the type of
+
+2
+00:00:05,700 --> 00:00:11,420
+recurrence relation is a decreasing function so already I have made one
+
+3
+00:00:11,420 --> 00:00:17,720
+video on recurrence relation or this is the second video see the title I have
+
+4
+00:00:17,720 --> 00:00:23,700
+given as recurrence relation decreasing function so one two three so
+
+5
+00:00:23,700 --> 00:00:27,180
+you can see all those functions so each functions is each function is
+
+6
+00:00:27,180 --> 00:00:32,160
+covered in a separate video now here I have a function it's a recursive
+
+7
+00:00:32,160 --> 00:00:37,860
+function when n is passed it is calling itself for n minus 1 then inside this
+
+8
+00:00:37,860 --> 00:00:46,770
+there is a loop for loop is there let us find out what's the time so for
+
+9
+00:00:46,770 --> 00:00:56,990
+this I will say this takes tn time then how much time this loop takes so I
+
+10
+00:00:56,990 --> 00:01:03,150
+try to take details this condition takes one unit of time and this for we have
+
+11
+00:01:03,150 --> 00:01:09,450
+been writing n plus 1 and whatever is there inside will execute for n times
+
+12
+00:01:10,710 --> 00:01:20,150
+then what about this statement this will execute for tn minus 1 time then
+
+13
+00:01:20,150 --> 00:01:27,810
+what is the recurrence relation if I write this one then tn is equals to
+
+14
+00:01:27,810 --> 00:01:42,090
+sum of all these so tn is equals to tn minus 1 plus 2n plus 2 this what
+
+15
+00:01:42,090 --> 00:01:50,690
+the recurrence relation I got but if I take it in this form it will not be
+
+16
+00:01:50,690 --> 00:01:58,010
+easy for me to solve it so this part of a relation we have to take a
+
+17
+00:01:58,010 --> 00:02:03,230
+asymptotic notation of that one means I should round round it up I
+
+18
+00:02:03,230 --> 00:02:08,990
+should not take 2n plus 2 so what is the notation for that it is big O of n
+
+19
+00:02:08,990 --> 00:02:15,310
+or theta of n also I can say it belongs to a linear class degree 1 so
+
+20
+00:02:15,310 --> 00:02:24,930
+that I can frame it as tn is equals to tn minus 1 plus n
+
+21
+00:02:24,930 --> 00:02:38,970
+instead of writing 2n plus 2 I can simply write n now this is the
+
+22
+00:02:38,970 --> 00:02:50,650
+recurrence relation see tn is equals to tn minus 1 plus n for n greater than 0
+
+23
+00:02:50,650 --> 00:02:57,650
+if it is greater than 0 and when n is equals to 0 what it is doing it is
+
+24
+00:02:57,650 --> 00:03:04,010
+doing nothing so I can say some constant or I will call it as 1 for
+
+25
+00:03:04,010 --> 00:03:09,290
+instead of constant I am writing it as 1 right or you can take C or anything
+
+26
+00:03:09,290 --> 00:03:15,510
+there so that's it so here we have learned how to prepare a recurrence
+
+27
+00:03:15,510 --> 00:03:24,990
+relation from a given algorithm or a function now this recurrence relation I
+
+28
+00:03:24,990 --> 00:03:38,620
+will solve it using recursion tree tn tn it is taking n amount of time this one
+
+29
+00:03:38,620 --> 00:03:45,900
+loop is taking n amount of time and also it is calling itself tn minus 1
+
+30
+00:03:48,020 --> 00:03:54,540
+then what about this step see that is printing n times so I have not
+
+31
+00:03:54,540 --> 00:03:58,460
+written print here I am saying that that statement is taking n times so I
+
+32
+00:03:58,460 --> 00:04:06,540
+wrote just time I'm not tracing it I am preparing a tree now this will be n
+
+33
+00:04:06,540 --> 00:04:16,020
+minus 1 and again it will call itself n minus 2 then this will be n minus 2
+
+34
+00:04:16,020 --> 00:04:20,540
+times this loop will repeat because now the value passed is n minus 2 and this
+
+35
+00:04:20,540 --> 00:04:30,280
+will be tn minus 3 continue if I continue like this then where it will
+
+36
+00:04:30,280 --> 00:04:37,360
+stop this n will reduce by 1 every time and it reach till 0 why because we
+
+37
+00:04:37,360 --> 00:04:41,740
+know the value of n is equals to 0 when n is equals to 0 answer is 1 so
+
+38
+00:04:41,740 --> 00:04:46,820
+that is the smallest value that we know so we say that it is reducing up to
+
+39
+00:04:46,820 --> 00:04:53,600
+t2 that time it will print 2 times and t1 and for t1 it will print that loop
+
+40
+00:04:53,600 --> 00:05:03,560
+will run for one time and this is t0 for t0 it does nothing that's it so
+
+41
+00:05:03,560 --> 00:05:08,140
+what is the amount of time taken here see if you compare this one with
+
+42
+00:05:08,140 --> 00:05:12,780
+the previous example in the previous video you can find that printf was
+
+43
+00:05:12,780 --> 00:05:16,280
+there so I was printing the value but no I am not printing the value I am
+
+44
+00:05:16,280 --> 00:05:21,100
+saying that this statement will take an amount of time because it is printing
+
+45
+00:05:21,100 --> 00:05:26,540
+n values instead of writing all n values I am just writing time now let
+
+46
+00:05:26,540 --> 00:05:31,260
+us find out the time how much time it is taking in this step n then the
+
+47
+00:05:31,260 --> 00:05:36,760
+what about this step n minus 1 time and then call so n minus 1 time and
+
+48
+00:05:36,760 --> 00:05:41,920
+this call is there so this call is taking how much time n minus 2 and then
+
+49
+00:05:41,920 --> 00:05:48,580
+n minus 3 so this will take how much time n minus 3 goes on this will take
+
+50
+00:05:48,580 --> 00:05:54,980
+how much time 2 and 1 then 0 if I sum up all these things then it will be
+
+51
+00:05:55,800 --> 00:06:06,060
+0 plus 1 plus 2 plus from here I am adding then goes on to n minus 1 plus n
+
+52
+00:06:06,060 --> 00:06:16,700
+what is this n into n plus 1 by 2 so the total time here see the time for this
+
+53
+00:06:16,700 --> 00:06:22,660
+one is n plus this time how much is this time n minus 1 plus this time so I
+
+54
+00:06:22,660 --> 00:06:27,700
+have added all of them so the total time is n into n plus 1 by 2 so tn we
+
+55
+00:06:27,700 --> 00:06:40,220
+got the answer as n into n plus 1 by 2 and this is n square now write theta we
+
+56
+00:06:40,220 --> 00:06:49,060
+go whatever it is it is n square so the time taken by this algorithm is n
+
+57
+00:06:49,060 --> 00:06:59,620
+square this is using tree method I have solved this right so see by practicing
+
+58
+00:06:59,620 --> 00:07:03,760
+you get the idea you don't have to elaborate it this much quickly you can
+
+59
+00:07:03,760 --> 00:07:08,400
+get the jump on to the answer so just you need to practice few functions
+
+60
+00:07:08,400 --> 00:07:13,140
+and recurrence relations and get the answer then you can directly give the
+
+61
+00:07:13,140 --> 00:07:19,100
+answer you don't have to solve all these huh when you are writing a theory
+
+62
+00:07:19,960 --> 00:07:24,340
+examination where you have to write essay type questions there you may have
+
+63
+00:07:24,340 --> 00:07:30,720
+to write on all these steps and then prove that it is n square if it is
+
+64
+00:07:30,720 --> 00:07:35,320
+objective type question direct answer you need so there is a method to know
+
+65
+00:07:35,320 --> 00:07:41,100
+the direct answer also we will be looking at this in coming videos now I
+
+66
+00:07:41,100 --> 00:07:47,180
+will show you another method that is back substitution or induction method so
+
+67
+00:07:47,180 --> 00:07:51,820
+that is back substitution by substitution we will solve this one so
+
+68
+00:07:51,820 --> 00:07:56,840
+I'll remove this and I will solve just recurrence relation now let us solve
+
+69
+00:07:56,840 --> 00:08:09,990
+this one tn is equals to tn minus 1 plus n I can move this one if I can
+
+70
+00:08:09,990 --> 00:08:18,830
+find out this so what is this since tn is equals to tn minus 1 plus n therefore
+
+71
+00:08:18,830 --> 00:08:31,010
+what a tn minus 1 will be tn minus 2 plus n minus 1 isn't it see n in case
+
+72
+00:08:31,010 --> 00:08:35,430
+of n in place of n n minus 1 so in place of n n minus 1 already minus 1
+
+73
+00:08:35,430 --> 00:08:42,170
+is there so n minus 2 then plus in place of n n minus 1 now I know this one
+
+74
+00:08:42,170 --> 00:08:48,010
+so instead of n minus 1 I can take this and substitute it here or this
+
+75
+00:08:48,010 --> 00:08:59,810
+becomes tn is equals to what is this tn minus 2 plus n minus 1 plus n as it
+
+76
+00:08:59,810 --> 00:09:15,050
+is if I open the brackets tn is equals to tn minus 2 plus n minus 1 and n
+
+77
+00:09:15,050 --> 00:09:20,430
+remember one thing whenever you are solving this one don't add it becomes
+
+78
+00:09:20,430 --> 00:09:24,790
+2 n minus 1 if it becomes 2 n minus 1 it will be difficult for you to find
+
+79
+00:09:24,790 --> 00:09:31,590
+out a formula for this one or a single expression for this sequence actually we
+
+80
+00:09:31,590 --> 00:09:35,390
+will be getting a sequence so based on that sequence we have to prepare a
+
+81
+00:09:35,390 --> 00:09:40,570
+formula if you add you'll be getting just a single one or two terms so from
+
+82
+00:09:40,570 --> 00:09:50,050
+that we cannot figure out the formula so better avoid adding these terms so if
+
+83
+00:09:50,050 --> 00:09:55,230
+this was the starting equation now after first substitution this is the second
+
+84
+00:09:55,230 --> 00:10:00,970
+equation I got now further I will substitute I need to know the value of
+
+85
+00:10:00,970 --> 00:10:07,330
+this so here only I will continue so what if I write n as n minus 2
+
+86
+00:10:07,330 --> 00:10:14,390
+instead of n if I write n minus 2 then this will be n minus 3 plus n minus 2
+
+87
+00:10:14,990 --> 00:10:20,990
+instead of n it is n minus 2 instead of n minus 2 sorry n minus 1 n minus 2
+
+88
+00:10:20,990 --> 00:10:25,390
+minus 1 so n minus 3 and this n minus 2 directly so in place of in this
+
+89
+00:10:25,390 --> 00:10:30,270
+equation only the first one only I have just kept n minus 1 in place of n
+
+90
+00:10:30,270 --> 00:10:37,770
+so you got this one so this part I will substitute it here so what I get
+
+91
+00:10:37,770 --> 00:10:49,590
+tn is equals to in brackets tn minus 3 plus n minus 2 plus outside n
+
+92
+00:10:49,670 --> 00:11:03,090
+minus 1 plus n open this one tn is equals to tn minus 3 plus n minus 2
+
+93
+00:11:03,090 --> 00:11:16,890
+plus n minus 1 plus n this is the third equation see after doing it for two
+
+94
+00:11:16,890 --> 00:11:21,970
+times then you can come on go to k steps and then you can get the formula
+
+95
+00:11:21,970 --> 00:11:26,410
+this is the method followed in induction right so we are substituting
+
+96
+00:11:26,410 --> 00:11:32,490
+the value so induction or substitution whatever you call it so I have done it
+
+97
+00:11:32,490 --> 00:11:38,330
+for two times now from this I can observe and say if I do it for k times
+
+98
+00:11:38,330 --> 00:11:44,330
+what will happen see when first equation it was n minus 1 and n this
+
+99
+00:11:44,330 --> 00:11:50,410
+was second equation n minus 2 and then n minus 1 and n two terms n minus
+
+100
+00:11:50,410 --> 00:11:58,910
+3 n minus 2 then 1 then n if I do it for k times what happens I'll use this
+
+101
+00:11:58,910 --> 00:12:09,730
+part yes if I continue this for k times let us see what I'll get tn is
+
+102
+00:12:09,730 --> 00:12:18,950
+equals to tn minus k instead of n minus 3 I am writing n minus k plus n
+
+103
+00:12:19,570 --> 00:12:26,630
+minus 2 this was 3 so it will be 2 1 less than this one so if this is a k
+
+104
+00:12:26,630 --> 00:12:38,620
+then this will be n minus k minus 1 this was 3 so that is 2 the next will
+
+105
+00:12:38,620 --> 00:12:53,300
+be n minus k minus 2 and goes on to n minus 1 and n so this is the fourth
+
+106
+00:12:53,300 --> 00:13:03,950
+one I got right this is the fourth one this is up to k now I assume that I
+
+107
+00:13:03,950 --> 00:13:10,530
+have reached till n minus k so I assume that I have reached till 0 and is 0 so
+
+108
+00:13:10,530 --> 00:13:24,770
+assume n minus k this one has became 0 therefore n is equals to k now
+
+109
+00:13:24,770 --> 00:13:31,430
+in place of k if I substitute n in this one let us see what I get tn is equals
+
+110
+00:13:31,430 --> 00:13:41,770
+to this one tn minus n plus n minus I'll open this so this becomes minus
+
+111
+00:13:41,770 --> 00:13:46,930
+n plus 1 so instead of k I am writing n and then I am opening the
+
+112
+00:13:46,930 --> 00:14:00,190
+ragged plus n minus n plus 2 then goes on last terms will be n minus 1 plus n
+
+113
+00:14:00,190 --> 00:14:07,310
+these two last terms as it is there is no k here now simplified further tn is
+
+114
+00:14:07,310 --> 00:14:17,090
+equals to t0 plus this nn gets cancelled 1 plus nn gets cancelled 2 so it means I
+
+115
+00:14:17,090 --> 00:14:23,230
+can figure out the next term is a 3 yes it is a 3 then goes on up to what
+
+116
+00:14:23,230 --> 00:14:33,450
+n minus 1 plus n that's it so what is this I got what is this I got this
+
+117
+00:14:33,450 --> 00:14:43,770
+is sum of first and natural numbers then tn is equals to t0 is what 1 plus
+
+118
+00:14:43,770 --> 00:14:56,130
+this is n into n plus 1 by 2 that's it if you compare the three method
+
+119
+00:14:56,130 --> 00:15:01,910
+there also I got n into n plus 1 by 2 but here I got one extra because this
+
+120
+00:15:01,910 --> 00:15:07,790
+is giving me calls number of calls actually so plus 1 call extra anyway
+
+121
+00:15:07,790 --> 00:15:16,370
+almost at the same thing so what is this this is theta of n square theta of
+
+122
+00:15:16,370 --> 00:15:22,890
+n square that's it I have solved this second one by using recursive tree
+
+123
+00:15:22,890 --> 00:15:28,210
+method as well as by substitution method and we got the same answer it's
+
+124
+00:15:28,210 --> 00:15:32,070
+order of n square so in this video we have learned how to write a
+
+125
+00:15:32,070 --> 00:15:36,430
+recurrence relation for any algorithm or a function then how to solve that
+
+126
+00:15:36,430 --> 00:15:39,850
+recurrence relation to get the answer so we saw two different methods
+
+127
+00:15:39,850 --> 00:15:44,710
+for solving it this useful for understanding the procedure how to solve
+
+128
+00:15:44,710 --> 00:15:52,230
+it and also useful for that is theory exams right but for objective type
+
+129
+00:15:52,230 --> 00:15:56,490
+questions you should know directly how to get the answer that will be
+
+130
+00:15:56,490 --> 00:15:57,750
+learning in next videos
+

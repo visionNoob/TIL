@@ -1,0 +1,360 @@
+1
+00:00:01,310 --> 00:00:08,330
+Now next is frequency count method. We will take some algorithms and find out
+
+2
+00:00:08,330 --> 00:00:13,970
+how this method is useful for finding the time complexity of algorithms. This
+
+3
+00:00:13,970 --> 00:00:20,550
+algorithm is for finding sum of all the elements in an array. Here is an array.
+
+4
+00:00:20,910 --> 00:00:34,660
+Assume that there is an array of some elements. I have taken an array of
+
+5
+00:00:34,660 --> 00:00:43,240
+size 5 with some elements in it. So what is n? n is 5. So a is this array and n is
+
+6
+00:00:43,240 --> 00:00:48,980
+5. Now what this algorithm is doing? It is finding the sum of all the elements
+
+7
+00:00:48,980 --> 00:00:55,240
+in an array. Let us analyze the time taken by this algorithm. So how do we do
+
+8
+00:00:55,240 --> 00:01:01,840
+that? By using frequency count method. So the time taken by an algorithm can
+
+9
+00:01:01,840 --> 00:01:08,720
+be known by assigning one unit of time for each statement. And if any statement
+
+10
+00:01:08,720 --> 00:01:13,740
+is repeating for some number of times, the frequency of statement, the frequency
+
+11
+00:01:13,740 --> 00:01:19,680
+of execution of that statement will calculate and we find the time taken by
+
+12
+00:01:19,680 --> 00:01:24,800
+that algorithm. So here we have some statement. This is statement which is
+
+13
+00:01:24,800 --> 00:01:29,680
+repeating for some number of times. So we will find out its frequency and
+
+14
+00:01:29,680 --> 00:01:34,800
+that will give us the time taken by this algorithm. So let us see. So this is a
+
+15
+00:01:34,800 --> 00:01:42,660
+simple statement. So this takes one unit of time. And as this is C language code
+
+16
+00:01:42,660 --> 00:01:47,260
+followed by algorithm, this is C language code, in this one we know this will
+
+17
+00:01:47,260 --> 00:01:55,140
+execute for one time and this will repeat for n times. But this condition
+
+18
+00:01:55,140 --> 00:02:04,060
+will be checked for n plus 1 time. How? When n is 5, then first time i will be
+
+19
+00:02:04,060 --> 00:02:12,040
+0. 0 is less than n. When i is 1, 1 is less than n, i is 2, 2 is less than n,
+
+20
+00:02:12,440 --> 00:02:23,940
+i is 3, 3 is also less than n, 4 is also less than n, 5 is not less than n, so it will
+
+21
+00:02:23,940 --> 00:02:30,840
+be 0. So how many times i has changed? 5 times. Then how many times this
+
+22
+00:02:30,840 --> 00:02:39,140
+condition is checked? 1, 2, 3, 4, 5, 6 times. 5 plus 1. 4 times it was true and
+
+23
+00:02:39,140 --> 00:02:45,700
+fifth time it was false. When it became 5, it was false, so it has stopped. So
+
+24
+00:02:45,700 --> 00:02:52,540
+this is executing for n plus 1 times. So we say that if you sum up this, this is
+
+25
+00:02:52,540 --> 00:02:58,480
+2n plus 2, but we write n plus 1. So it means we are bothered about this one only.
+
+26
+00:03:01,860 --> 00:03:06,160
+Right? We are bothered about only this one, we don't want to write about those
+
+27
+00:03:06,160 --> 00:03:09,700
+things. Usually it is written n plus 1 only, but if you observe it carefully
+
+28
+00:03:09,700 --> 00:03:14,940
+it is 2n plus 2, but we don't want to write the time taken by these two.
+
+29
+00:03:16,620 --> 00:03:21,900
+Right? As i said, we'll be doing it briefly. Then, whatever the statement is
+
+30
+00:03:21,900 --> 00:03:27,140
+there inside this loop, as this is repeating for n times, this statement will
+
+31
+00:03:27,140 --> 00:03:33,180
+also repeat for n times. So this is n times. So now we can understand that
+
+32
+00:03:33,180 --> 00:03:38,360
+whatever is written in a loop like this type of loop, the statement will
+
+33
+00:03:38,360 --> 00:03:44,020
+execute for n times. And the loop itself if you take, it will execute for n
+
+34
+00:03:44,020 --> 00:03:51,300
+plus 1 times. Then the last statement, it will execute for 1 time. Then what's
+
+35
+00:03:51,300 --> 00:04:03,740
+the time function? f of n is 2n plus 1, 2, 3. That's it. This is the time
+
+36
+00:04:03,740 --> 00:04:12,680
+function. Now what is the degree of that polynomial? It is a degree 1, it is
+
+37
+00:04:12,680 --> 00:04:20,100
+just n. So we say order of n. I'm calling it as order of, I'm not saying
+
+38
+00:04:20,100 --> 00:04:25,640
+big O or theta, we will learn it in some other video. Now, for now, I will say
+
+39
+00:04:25,640 --> 00:04:33,520
+order of n. Base complexity. See what are the variables used here? A is used,
+
+40
+00:04:34,100 --> 00:04:47,200
+n, s and i. A, m, s, i. The size of A is n words and all these are just one
+
+41
+00:04:47,200 --> 00:04:56,530
+word. So total is how much? n plus 3. So that space complexity is s of n is n
+
+42
+00:04:56,880 --> 00:05:04,960
+plus 3. Now this polynomial is also degree n. So we say, space complexity
+
+43
+00:05:04,960 --> 00:05:12,180
+we got it as order of n and the time complexity is also order of n. Now next
+
+44
+00:05:12,180 --> 00:05:19,080
+algorithm is for finding the sum of two matrices A and B are square matrices
+
+45
+00:05:19,080 --> 00:05:27,180
+of dimension n cross n, n cross n. For example, it is 3 cross 3, then these are
+
+46
+00:05:27,180 --> 00:05:35,300
+matrices or two dimensional arrays of size 3 by 3, dimensions are 3 by 3, assume
+
+47
+00:05:35,300 --> 00:05:41,320
+that. So n by n, they are n by n. Now here I have an algorithm for finding the
+
+48
+00:05:41,320 --> 00:05:48,120
+sum of two matrices. Let us find out the time complexity for this one.
+
+49
+00:05:49,120 --> 00:05:57,880
+Already we know this will take n plus 1 time. Now whatever is there inside this
+
+50
+00:05:57,880 --> 00:06:10,760
+loop will execute for n times. This is n, this is also n. Two lines are there, two
+
+51
+00:06:10,760 --> 00:06:19,040
+lines are there. Now what is this? Again this is a loop. So for this also, n plus 1, then again whatever is
+
+52
+00:06:19,040 --> 00:06:27,820
+there inside this one will execute for n times. That's it. Now what is the time
+
+53
+00:06:27,820 --> 00:06:40,860
+taken by this one? f of n is n square, n square, 2n square plus n and n, so 2n plus 1.
+
+54
+00:06:42,120 --> 00:06:48,480
+This is the time function for this algorithm. What is the degree, highest
+
+55
+00:06:48,480 --> 00:06:57,800
+degree? 2. So we don't write degree, we write n square, order of n square. So
+
+56
+00:06:57,800 --> 00:07:02,060
+we are writing the degree. We are not saying that this is equal to this one.
+
+57
+00:07:02,260 --> 00:07:08,940
+We are saying that degree of this polynomial is n square. That's all. This is the time
+
+58
+00:07:08,940 --> 00:07:17,040
+complexity. Let us take space complexity. What are the variables that
+
+59
+00:07:17,040 --> 00:07:37,940
+is having a, b, c? a, b and c. n, i, j. n, i, j. What are a, b, c? They are
+
+60
+00:07:37,940 --> 00:07:52,320
+two dimensional arrays, n cross n. n square, n square, n square. What are n, i, j? They
+
+61
+00:07:52,320 --> 00:07:59,040
+are scalar variables, simple variables. One word, one word, one word. So space
+
+62
+00:07:59,040 --> 00:08:14,340
+function is 3n square plus 3. Then, what is the degree? n square. So this is also n
+
+63
+00:08:14,340 --> 00:08:20,520
+square. Space complexity is also n square. So the time and the space
+
+64
+00:08:20,520 --> 00:08:25,420
+complexity of this algorithm is n square. How to find the time complexity? I have
+
+65
+00:08:25,420 --> 00:08:30,180
+shown it here. How to find the space complexity? I have shown it here. So for
+
+66
+00:08:30,180 --> 00:08:35,060
+few algorithms I may be showing, for any algorithm you can find out this
+
+67
+00:08:35,060 --> 00:08:40,900
+one by following this approach. Next algorithm is multiplication of two
+
+68
+00:08:40,900 --> 00:08:46,800
+matrices. You can see that there are three loops nested, one inside another,
+
+69
+00:08:46,980 --> 00:08:54,940
+one inside another. Let us find out the time. On this side I will write, this
+
+70
+00:08:54,940 --> 00:08:59,740
+will be little far away. So this side I will write, so you can see them. This
+
+71
+00:08:59,740 --> 00:09:08,040
+is n plus 1. Whatever is there inside will execute for n times. Every
+
+72
+00:09:08,040 --> 00:09:25,520
+statement n times. Then, again this is a loop. So this is n plus 1. Whatever is
+
+73
+00:09:25,520 --> 00:09:39,330
+there inside will execute for n times. So into n, into n, and into n. Then again
+
+74
+00:09:39,330 --> 00:09:48,070
+there is a loop. So this is n plus 1 times. Whatever is there inside will
+
+75
+00:09:48,070 --> 00:09:56,250
+execute for n times again. So as this statement is inside all three loops, so
+
+76
+00:09:56,250 --> 00:10:02,450
+this is going to execute for n cubed times. This is inside just these two
+
+77
+00:10:02,450 --> 00:10:06,690
+loops, these two loops. So this is executing for n square and these are
+
+78
+00:10:06,690 --> 00:10:12,650
+loops themselves. So that is n plus 1 and this is n square and this is n cubed. If you
+
+79
+00:10:12,650 --> 00:10:21,600
+finally write down the time function f of n will be equals to, see n cubed and
+
+80
+00:10:21,600 --> 00:10:31,380
+one more n cubed, 2n cubed plus, this is n square and this is n square and this is
+
+81
+00:10:31,380 --> 00:10:45,630
+one more n square. So 3n square plus, this is 1n and 2n. So 2n plus 1.
+
+82
+00:10:46,850 --> 00:10:53,330
+That's it. Now we got the degree of the polynomial as cube. So the time
+
+83
+00:10:53,330 --> 00:11:05,270
+function is order of n cube. It's order of n cube. Let us see space for this
+
+84
+00:11:05,270 --> 00:11:22,430
+one. Space complexity for this one. A, B and C. Yes, A, B and C. n, i, j, k. n, i, j and k.
+
+85
+00:11:23,770 --> 00:11:33,150
+This is a matrix. So n square, n square, n square and all these are 1, 1, 1. So this
+
+86
+00:11:34,150 --> 00:11:49,730
+space is 3n square plus 4. So this is order of n square. Time is order of n cube. Space is
+
+87
+00:11:49,730 --> 00:12:06,300
+order of n square. You can have a look at this whole thing. So that's it. So I
+
+88
+00:12:06,300 --> 00:12:11,500
+have shown you three different algorithms taking different amount of time. One was
+
+89
+00:12:11,500 --> 00:12:17,120
+order of n and n square and n cube. Next video you can watch the different
+
+90
+00:12:17,120 --> 00:12:20,900
+type of algorithms and also the method how to analyze them.
+

@@ -1,0 +1,236 @@
+1
+00:00:00,000 --> 00:00:05,480
+Now next video, characteristics of algorithm. What are the characteristics?
+
+2
+00:00:05,660 --> 00:00:11,560
+What are the properties of an algorithm? So let us check. First one, algorithm
+
+3
+00:00:11,560 --> 00:00:16,920
+must take some input. So algorithm, some algorithm may not take any input also
+
+4
+00:00:16,920 --> 00:00:29,780
+but algorithm can take zero or more input. They can take zero or more input.
+
+5
+00:00:29,780 --> 00:00:37,800
+The next, output. Algorithm must generate at least one output otherwise it's no
+
+6
+00:00:37,800 --> 00:00:43,280
+use of writing algorithm. It must generate some result. See imagine them
+
+7
+00:00:43,280 --> 00:00:47,900
+like a function, C language function. Like when you call a function, function
+
+8
+00:00:47,900 --> 00:00:53,160
+may not take any parameters also but function returns something. If it's not
+
+9
+00:00:53,160 --> 00:00:59,560
+returning we say void but it does something definitely. If it is
+
+10
+00:00:59,560 --> 00:01:04,880
+return type like but the function gives some result definitely. That's what is
+
+11
+00:01:04,880 --> 00:01:23,660
+the output. At least one output. Then definiteness. Every statement should be
+
+12
+00:01:25,180 --> 00:01:32,040
+unambiguous and it should have a single and exact meaning. You cannot write any
+
+13
+00:01:32,040 --> 00:01:37,840
+statement which cannot be understood or which cannot be solved. Like if the
+
+14
+00:01:37,840 --> 00:01:43,380
+human cannot solve it, we can't ask our computers to solve that one. So every
+
+15
+00:01:43,380 --> 00:01:48,780
+statement that you're writing should be definite. That's clear. So definiteness.
+
+16
+00:01:49,760 --> 00:01:54,460
+You cannot use the value. For example I tell you, you cannot use the value
+
+17
+00:01:54,460 --> 00:02:03,200
+that suppose root minus one. It's unknown value. Unknown value. So we say it as
+
+18
+00:02:03,200 --> 00:02:08,420
+imaginary number. So you cannot treat it as a real number and in the
+
+19
+00:02:08,420 --> 00:02:15,100
+algorithm. Right? This is an example I'm giving you. So every statement must give clear meaning.
+
+20
+00:02:15,100 --> 00:02:21,080
+Only one meaning. That's it. Then next is finiteness. Algorithm is just like a
+
+21
+00:02:21,080 --> 00:02:24,700
+function as I said. A function will have some limited set of steps and it
+
+22
+00:02:24,700 --> 00:02:29,740
+will stop and returns the result. So same way algorithm must terminate at
+
+23
+00:02:29,740 --> 00:02:34,340
+some point. Whether it may be having 10 statements or maybe having 10,000
+
+24
+00:02:34,340 --> 00:02:40,580
+statement but it must have finite set of statement. The duration of algorithm
+
+25
+00:02:40,580 --> 00:02:45,460
+must be finite. Definitely we'll stop writing after some statements you may
+
+26
+00:02:45,460 --> 00:02:51,140
+stop. But the meaning here is that there are some programs which runs
+
+27
+00:02:51,140 --> 00:02:57,080
+continuously unless and until you stop them. Like example database server.
+
+28
+00:02:57,960 --> 00:03:02,000
+Oracle server you start and if you leave the machine as it is and don't
+
+29
+00:03:02,000 --> 00:03:07,980
+stop it then Oracle server will be keep on running. SQL server it will be keep on
+
+30
+00:03:07,980 --> 00:03:14,220
+running. It's like a service. Web server keep on running. So it is not a service.
+
+31
+00:03:14,780 --> 00:03:22,120
+It's an algorithm. It's a procedure. So it must stop. Then effectiveness. Now this is
+
+32
+00:03:22,120 --> 00:03:25,800
+simple. You should not write unnecessary statements in an algorithm.
+
+33
+00:03:26,100 --> 00:03:29,920
+Whatever the statement you write the objective is that it should do
+
+34
+00:03:29,920 --> 00:03:35,100
+something, serve some purpose in the procedure in the steps of an algorithm.
+
+35
+00:03:35,100 --> 00:03:40,980
+Don't write unnecessary statements. See algorithm is like a procedure. So there are
+
+36
+00:03:40,980 --> 00:03:45,680
+many procedure. Like a chemistry experiment done by the students in the
+
+37
+00:03:45,680 --> 00:03:50,580
+laboratory is a procedure. And physics experiment done by the students in the
+
+38
+00:03:50,580 --> 00:03:55,900
+laboratory is also procedure. Or if you take a procedure for preparing a dish,
+
+39
+00:03:56,340 --> 00:04:01,600
+cooking a dish that is a recipe that's also procedure. And every procedure the
+
+40
+00:04:01,600 --> 00:04:05,200
+names I have given you, examples I have given you, every procedure needs some
+
+41
+00:04:05,200 --> 00:04:09,680
+input. Like chemical experiment needs some chemicals and the apparatus and
+
+42
+00:04:10,280 --> 00:04:14,260
+physics experiment needs in instruments and the recipe needs some
+
+43
+00:04:14,260 --> 00:04:21,240
+ingredients. Then objective of that procedure is to give some result. You
+
+44
+00:04:21,240 --> 00:04:25,160
+are cooking and cooking but no dish is prepared. Nothing like that. You are
+
+45
+00:04:25,160 --> 00:04:30,160
+doing some experiment but no solution is obtained in chemistry experiment. No
+
+46
+00:04:30,160 --> 00:04:33,560
+there must be some solution. So definitely there must be some solution. At least one
+
+47
+00:04:33,560 --> 00:04:39,100
+solution. Definiteness. All the steps that you are doing are known step only.
+
+48
+00:04:39,240 --> 00:04:43,860
+You are not doing anything magical. Right? Known steps you are performing.
+
+49
+00:04:47,640 --> 00:04:52,040
+Every step that you are doing here is known step and it's nothing is
+
+50
+00:04:52,040 --> 00:04:58,100
+magical. Right? Only known steps you are performing. And finiteness. If you are
+
+51
+00:04:58,100 --> 00:05:02,180
+preparing a dish you will stop at some point and the dish is ready. If
+
+52
+00:05:02,180 --> 00:05:05,520
+you are doing a chemical experiment you will stop at some point and the
+
+53
+00:05:05,520 --> 00:05:11,120
+solution is ready. Definitely. And effectiveness. Effectiveness. You will
+
+54
+00:05:11,120 --> 00:05:15,680
+not do anything unnecessary while doing this procedure. Like you are
+
+55
+00:05:15,680 --> 00:05:21,560
+boiling some chemical and but you're not using it in the experiment. It's
+
+56
+00:05:21,560 --> 00:05:26,120
+not mixed with the solution. You are cutting some vegetables in the recipe
+
+57
+00:05:26,120 --> 00:05:31,080
+but that is not used in the dish. So there is unnecessary things are not
+
+58
+00:05:31,080 --> 00:05:34,760
+done in the procedure. So here also in the algorithm you should not have any
+
+59
+00:05:34,760 --> 00:05:35,820
+unnecessary statements.
+

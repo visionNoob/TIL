@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:06,640
+Let us talk about prairie analysis and posterior testing. These are the two terms that are used
+
+2
+00:00:06,640 --> 00:00:12,520
+for algorithms and the programs. Prairie analysis is done over the algorithm. So,
+
+3
+00:00:12,740 --> 00:00:17,440
+prairie analysis means we will do the analysis of an algorithm by studying it into greater
+
+4
+00:00:17,440 --> 00:00:24,700
+detail knowing how it is working and we get some results. The result of analysis there.
+
+5
+00:00:24,760 --> 00:00:28,740
+What is that? We may find out the time and the space consumed by an algorithm.
+
+6
+00:00:29,360 --> 00:00:36,600
+The result of analysis and testing is done on the program. So, we run and execute the program and
+
+7
+00:00:36,600 --> 00:00:40,660
+check it. So, we will know the wash time it is taking, how much, how many seconds,
+
+8
+00:00:40,820 --> 00:00:47,100
+milliseconds it is taking and also the amount of memory it is consuming in terms of bytes.
+
+9
+00:00:49,900 --> 00:00:55,880
+So, this is prairie analysis is done on algorithm and the posterior testing is done on programs.
+
+10
+00:00:57,320 --> 00:01:01,840
+Now, when prairie analysis is done over an algorithm, we know that algorithms are not
+
+11
+00:01:02,680 --> 00:01:07,260
+written in a particular language. So, they are language independent and also
+
+12
+00:01:07,260 --> 00:01:11,660
+they are hardware independent. They are not meant for a particular hardware.
+
+13
+00:01:12,160 --> 00:01:18,800
+But if it has a program, we write it program that is hardware specific as well as language
+
+14
+00:01:18,800 --> 00:01:24,780
+specific and as well as operating system specific, environment specific also. So,
+
+15
+00:01:24,780 --> 00:01:29,020
+they are dependent on the hardware as well as the programming language used.
+
+16
+00:01:30,780 --> 00:01:34,480
+And here the result of this one is how we get the time and the space.
+
+17
+00:01:35,360 --> 00:01:40,540
+We don't get wash time 3 minutes, 10 minutes, 5 seconds or milliseconds. No,
+
+18
+00:01:41,000 --> 00:01:45,960
+we will get the time function and we get the space function.
+

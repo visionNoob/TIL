@@ -5,5 +5,5 @@
 
 |🗂️ 강의 목록  | 🇬🇧 English     | 🇰🇷 Korean |
 |--------------|--------------|--------------|
-| 1. Introduction to Algorithms  | Download  | Download  |
+| [1. Introduction to Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME)  | [Download](./subtitles/Algorithms_Abdul_Bari/eng/1_Introduction_to_Algorithms.srt)  | Download  |
 | Content 2-1  | Content 2-2  | Content 2-3  |

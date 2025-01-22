@@ -1,0 +1,352 @@
+1
+00:00:00,000 --> 00:00:12,220
+Hello friends, I am going to start a course on Algorithms. Algorithm as a subject. Algorithm is a common subject for computer science engineering students.
+
+2
+00:00:12,600 --> 00:00:20,460
+Most of the universities offer this course as a part of syllabus. And this is a very core subject and very important subject.
+
+3
+00:00:21,500 --> 00:00:27,360
+And students face some difficulties in some of the topics in this one, they could not understand them very clearly.
+
+4
+00:00:28,480 --> 00:00:38,500
+So here I am going to make the subject more and more simple so that you can easily understand and even you can practice that and also remember it easily.
+
+5
+00:00:39,480 --> 00:00:47,460
+The importance of the subject is that apart from theoretical examination, it is also important for competitive exams.
+
+6
+00:00:48,060 --> 00:00:57,620
+And even programming contest, most of them are designed from this subject only. If any programming challenge is there, they mostly pick up the questions from this subject.
+
+7
+00:00:58,580 --> 00:01:07,740
+So this is one of the challenging subject for the student because they get a chance to solve different type of problems and they get the strategy or approach for solving the problem.
+
+8
+00:01:09,480 --> 00:01:17,500
+So some students fail to understand it properly so they could not get the approach for or the strategy for solving the problems.
+
+9
+00:01:17,920 --> 00:01:24,220
+And they feel that they are lacking in the logic development or strategic development of a program.
+
+10
+00:01:25,500 --> 00:01:31,520
+So I will be covering in-depth each and everything right from the basics to the depth.
+
+11
+00:01:33,100 --> 00:01:36,920
+So that you will be able to answer any type of question from this one.
+
+12
+00:01:38,440 --> 00:01:46,920
+I will cover the topic such that just you look at the question, you can get the answer that I guarantee you.
+
+13
+00:01:48,960 --> 00:01:54,020
+Right. So the thing is, I will cover those points which are useful for solving the questions.
+
+14
+00:01:55,880 --> 00:02:05,980
+Some job interviews or even for any other exam or some entrance exams like GATE exam, the questions are framed from algorithms also which is also one of the key subject there.
+
+15
+00:02:05,980 --> 00:02:10,140
+So you will be able to answer any type of question from there.
+
+16
+00:02:10,860 --> 00:02:22,140
+You have to watch the lectures in the order. I will be giving the numbers for each topic so that you follow that order, you follow the sequence because I may be breaking the major topic into small topics.
+
+17
+00:02:23,620 --> 00:02:32,720
+And one more important thing is, your feedback is very important for me because already I have prepared few videos using presentations and other tools.
+
+18
+00:02:32,720 --> 00:02:41,040
+But now I am giving a lecture on whiteboard. So maybe I am new for the video quality and audio quality, all these things.
+
+19
+00:02:41,440 --> 00:02:47,560
+So technically once I get set up, so I need your feedback so I can make my videos more and more better.
+
+20
+00:02:48,540 --> 00:03:00,680
+So your feedback is important for me to know how the video quality and audio quality you are getting it on your devices because I have checked on different devices and I found that the results are different.
+
+21
+00:03:00,680 --> 00:03:07,340
+So what devices you are using, what I should improve, voice or what. So I need your feedback.
+
+22
+00:03:08,420 --> 00:03:19,440
+Let us start with just introduction. What is an Algorithm? What is an Algorithm? Why it is written? When it is written? Who will write it? Let us get the answers for these.
+
+23
+00:03:19,440 --> 00:03:28,940
+See, Algorithm as a definition, it is a common definition everybody knows that. It is a step by step procedure for solving a computational problem.
+
+24
+00:03:29,620 --> 00:03:34,700
+Yes, it is a step by step procedure for solving a computational problem. Then what is a Program?
+
+25
+00:03:35,360 --> 00:03:43,040
+Program is also a step by step procedure for solving a problem. Then what is the difference between Program and Algorithm?
+
+26
+00:03:43,040 --> 00:03:50,040
+So by comparing Program and Algorithm, I can make you understand the importance of Algorithm, the meaning of Algorithm.
+
+27
+00:03:51,160 --> 00:04:14,520
+Let us take a look. Here is an Algorithm and here is a Program. Let us see the first thing, first difference.
+
+28
+00:04:14,520 --> 00:04:22,020
+If you know the software development life cycle, the phases of developing a software project.
+
+29
+00:04:22,760 --> 00:04:29,940
+In the phases of development of software project, there are two important phases, design phase and the implementation phase.
+
+30
+00:04:30,720 --> 00:04:38,580
+If you are not aware of it, let me tell you. Whatever you want to manufacture or construct something by engineering procedures,
+
+31
+00:04:38,580 --> 00:04:47,380
+then first step, one of the important steps is designing. First you do designing, make your design perfect and thorough
+
+32
+00:04:47,380 --> 00:04:55,200
+so that you can understand what you are going to construct, what you are going to develop and when you are sure what you are going to develop, then you start the development.
+
+33
+00:04:56,460 --> 00:05:01,900
+You cannot develop anything, you cannot construct anything on trial and error basis.
+
+34
+00:05:01,900 --> 00:05:08,320
+Like you constructed something, again don't know it's wrong, destroy and again create a new one. So no.
+
+35
+00:05:08,900 --> 00:05:17,600
+But it is easy in software engineering. A software engineer can write some program and change the mind, delete the program and again start writing the program.
+
+36
+00:05:18,400 --> 00:05:25,720
+So that's why we cannot get the feel that we have wasted so much amount of time in writing so useless program.
+
+37
+00:05:26,500 --> 00:05:30,920
+So the point is, first you design and then you write the program.
+
+38
+00:05:30,920 --> 00:05:37,060
+So at the design time, what do you use? So you are not writing a program, then what do you write?
+
+39
+00:05:37,600 --> 00:05:49,700
+So that same program, we write it in simple English like statements that are easy to understand without using proper syntax and we may not be writing on machine, that is on computer, we may be writing on paper.
+
+40
+00:05:51,540 --> 00:05:59,320
+Or even if you are using a machine also, then you will not be writing in some language, you may be writing in MS Word or Notepad like application.
+
+41
+00:05:59,320 --> 00:06:06,180
+So just you are getting familiar how your program going to work. So that's nothing but an algorithm.
+
+42
+00:06:07,280 --> 00:06:24,290
+So algorithms are written at design time. And when the programs are written, they are written at implementation time.
+
+43
+00:06:26,810 --> 00:06:39,710
+Design time and implementation time. So first you make a design, what your procedure is going to do, what your software is going to do, come up with some design and that design you convert into a program.
+
+44
+00:06:41,310 --> 00:06:49,670
+Then what do you call the person who do designing, whether the programmer does that? Yes, if programmer is capable of doing that, he can do it.
+
+45
+00:06:49,910 --> 00:06:59,470
+Otherwise the person who will do this one should have the domain knowledge, the problems knowledge, knowledge about the problem and its solution.
+
+46
+00:07:00,170 --> 00:07:05,070
+He can give a solution, the one who understand the problem and has the domain knowledge.
+
+47
+00:07:05,070 --> 00:07:13,090
+Suppose you are developing a software or an algorithm or a program for account, then accountant can understand accounting better.
+
+48
+00:07:14,110 --> 00:07:25,490
+Or if you are writing an application or developing an application for hospital, then doctors or the administrative staff of a hospital can understand the system better than a programmer.
+
+49
+00:07:26,150 --> 00:07:33,750
+So mostly the one who is having a knowledge about the domain for which the application is being developed, they can write on the algorithm.
+
+50
+00:07:33,750 --> 00:07:44,610
+So the person who writes should have domain knowledge.
+
+51
+00:07:46,010 --> 00:07:57,440
+Who will write the program? Programmer. So programmers can also have domain knowledge, they can also have domain knowledge.
+
+52
+00:07:57,600 --> 00:08:02,760
+Then he is acting as a designer and here he is acting as a programmer.
+
+53
+00:08:04,520 --> 00:08:10,020
+Next, what is the language used for writing algorithm? You can use any language.
+
+54
+00:08:12,940 --> 00:08:18,160
+Any language. Any language means English like language or you can use some mathematical notations.
+
+55
+00:08:19,400 --> 00:08:23,380
+If you are writing English like language, it will be like writing paras or summary.
+
+56
+00:08:23,860 --> 00:08:30,160
+But don't write, if you want you can use mathematical notations also. It is better if you use mathematical notations.
+
+57
+00:08:32,160 --> 00:08:37,080
+So any language can be used. Any language means English language or some mathematical notations can be used.
+
+58
+00:08:37,080 --> 00:08:42,020
+As long as it is understandable by those people who are using it.
+
+59
+00:08:42,840 --> 00:08:47,480
+Like if a designer has written an algorithm, then the programmer will be writing a program for it.
+
+60
+00:08:47,880 --> 00:08:51,860
+So designer should understand and also programmer should understand that one.
+
+61
+00:08:52,720 --> 00:08:57,920
+So the team of programmers who are working on that project should be able to understand it.
+
+62
+00:08:57,920 --> 00:09:02,080
+Then this is written only using programming language.
+
+63
+00:09:03,920 --> 00:09:13,000
+Like C++, Java, Python. So you can use different languages for developing a program.
+
+64
+00:09:15,300 --> 00:09:26,620
+The next, one more important thing here is, when you write an algorithm, it is going to be hardware and software means operating system independent.
+
+65
+00:09:26,620 --> 00:09:33,780
+It is not dependent on hardware, what machine you are going to use, what is the configuration of the machine and what is the operating system.
+
+66
+00:09:33,980 --> 00:09:38,920
+Either Linux operating system or Windows operating system. We don't bother about it.
+
+67
+00:09:39,240 --> 00:09:44,620
+But when you write a program, it is dependent on hardware and operating system.
+
+68
+00:09:45,440 --> 00:09:53,000
+So when you develop a program, you have to select some hardware on which you are going to run and also you have to select some operating system.
+
+69
+00:09:53,000 --> 00:10:00,320
+You may be doing it for Linux or you may be doing it for Windows. So the method will be different and the environments are different.
+
+70
+00:10:01,800 --> 00:10:02,540
+So this is important.
+
+71
+00:10:04,880 --> 00:10:10,540
+The next, after writing an algorithm, we analyze. Analyze an algorithm.
+
+72
+00:10:10,820 --> 00:10:21,540
+Means we will study the algorithm to find out are we achieving the results perfectly or not and our algorithm is efficient or not in terms of time and space.
+
+73
+00:10:21,540 --> 00:10:30,340
+We will see what does it mean by analysis. So we will analyze an algorithm.
+
+74
+00:10:32,180 --> 00:10:35,560
+What do we do with the program? So you don't have to study the program.
+
+75
+00:10:35,780 --> 00:10:39,200
+Already program is there. Just run it and check it.
+
+76
+00:10:39,400 --> 00:10:45,800
+So we do testing. Testing of the programs.
+
+77
+00:10:47,260 --> 00:10:53,160
+That's it. These are few differences between algorithm and program.
+
+78
+00:10:53,160 --> 00:10:56,880
+These differences will help you understand what are algorithms.
+
+79
+00:10:59,240 --> 00:10:59,460
+Alright.
+
+80
+00:11:00,860 --> 00:11:05,100
+Now, one more thing I will tell you. The syntax of the language that we use.
+
+81
+00:11:05,800 --> 00:11:12,220
+Any language can be used. But who actually write algorithms and who use them and who write the programs?
+
+82
+00:11:12,360 --> 00:11:15,940
+Programmers who are coming from university graduates.
+
+83
+00:11:16,280 --> 00:11:19,680
+Mostly university graduate knows at least C language.
+
+84
+00:11:20,420 --> 00:11:24,890
+So nowadays, mostly in the name of algorithm, we write C language program only.
+
+85
+00:11:26,440 --> 00:11:29,920
+So the benefit is that the advantage is that everybody knows C language now.
+
+86
+00:11:30,860 --> 00:11:37,840
+So instead of writing some other language to confuse, we can use C language only so that everybody can understand.
+
+87
+00:11:39,000 --> 00:11:43,400
+So even at a school level, C language is being taught so everybody is familiar with C language.
+
+88
+00:11:44,100 --> 00:11:47,320
+So I may be using C language syntax for writing algorithms.
+

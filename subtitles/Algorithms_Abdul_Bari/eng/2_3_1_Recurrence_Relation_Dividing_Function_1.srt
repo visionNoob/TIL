@@ -1,0 +1,408 @@
+1
+00:00:00,000 --> 00:00:04,980
+Hi, next these are dividing functions. We will look at dividing function already
+
+2
+00:00:04,980 --> 00:00:08,240
+I have few videos on the decreasing functions
+
+3
+00:00:08,240 --> 00:00:13,000
+Now this is called as dividing function reason if you see in the algorithm or a function
+
+4
+00:00:13,000 --> 00:00:17,600
+It is calling itself for n by 2 if n is passed then it is
+
+5
+00:00:17,600 --> 00:00:23,060
+Dividing n see if our algorithm is taking any parameter. Let us say n
+
+6
+00:00:23,720 --> 00:00:29,980
+then it can reduce the value of n by either n minus 1 that is subtracting
+
+7
+00:00:30,000 --> 00:00:35,360
+or decreasing or n by 2 that is a dividing or
+
+8
+00:00:35,360 --> 00:00:38,360
+root n that is root function
+
+9
+00:00:39,680 --> 00:00:46,580
+Right so for all these we can have different type of functions where the algorithm or a recursive function is calling itself again
+
+10
+00:00:46,580 --> 00:00:49,620
+by root value of n or
+
+11
+00:00:49,620 --> 00:00:56,060
+Divided value of n or decreased value of n so already we have decreased value of n functions now
+
+12
+00:00:56,060 --> 00:00:59,680
+This is dividing value of the function if you have not seen those videos
+
+13
+00:00:59,680 --> 00:01:03,000
+You can watch them now. Let us solve this one
+
+14
+00:01:03,000 --> 00:01:09,800
+Let us prepare a recurrence relation. We will say this algorithm takes a t n time and
+
+15
+00:01:10,700 --> 00:01:16,100
+There are two statements inside this one so this takes one unit of time and when this is a t n
+
+16
+00:01:16,100 --> 00:01:18,820
+What is this t n by 2?
+
+17
+00:01:19,820 --> 00:01:27,080
+Then what is the equation t n is equals to these two so this is t n by 2?
+
+18
+00:01:27,520 --> 00:01:28,500
+plus 1
+
+19
+00:01:31,000 --> 00:01:38,140
+That's the recurrence relation now. Let us write that recurrence relation here t n is equals to
+
+20
+00:01:38,840 --> 00:01:40,900
+t n by 2
+
+21
+00:01:40,900 --> 00:01:42,460
+plus 1
+
+22
+00:01:42,460 --> 00:01:44,980
+when n is
+
+23
+00:01:45,760 --> 00:01:49,680
+See if you observe here. I have written 1 I
+
+24
+00:01:49,680 --> 00:01:53,380
+Have written 1 so if n is greater than 1 this is happening
+
+25
+00:01:54,220 --> 00:01:59,660
+If n is equal to 1 then nothing so I can take constant or
+
+26
+00:01:59,680 --> 00:02:00,940
+write 1
+
+27
+00:02:02,340 --> 00:02:02,880
+constant
+
+28
+00:02:04,680 --> 00:02:10,260
+This is the recurrence relation now. Let us solve this one by using tree method
+
+29
+00:02:10,860 --> 00:02:12,740
+recursion tree method
+
+30
+00:02:13,660 --> 00:02:15,120
+t n is called
+
+31
+00:02:15,120 --> 00:02:22,280
+What are the steps 1 and t n by 2 so this is 1 and this is t n by 2?
+
+32
+00:02:23,440 --> 00:02:29,160
+How much time t n takes 1 plus whatever the time taken by this we don't know the time for this one
+
+33
+00:02:29,160 --> 00:02:36,640
+So what is this this is 1 plus t n by 2 squared so that is n by 2 by 2 again
+
+34
+00:02:37,960 --> 00:02:43,620
+So this one is 1 t n by 2 cubed
+
+35
+00:02:46,160 --> 00:02:53,280
+How long we will continue we say that we'll continue for k times so if we continue for k times then this will be
+
+36
+00:02:54,220 --> 00:02:58,160
+t of n by 2 power k
+
+37
+00:02:59,940 --> 00:03:05,640
+See when this is getting divided and divided and divided at last what we will get
+
+38
+00:03:05,640 --> 00:03:11,380
+The unity value or the unit value for division and multiplication is 1
+
+39
+00:03:11,960 --> 00:03:14,340
+so it should stop at 1 and
+
+40
+00:03:15,500 --> 00:03:19,060
+We know when n is equals to 1 answer is 1
+
+41
+00:03:19,600 --> 00:03:23,540
+So the purpose of go on dividing is to reach that 1
+
+42
+00:03:23,540 --> 00:03:29,940
+So we assume that we have reached till n by 2 power k that is equal to 1
+
+43
+00:03:31,740 --> 00:03:33,780
+So now let us see what is the time
+
+44
+00:03:33,780 --> 00:03:41,140
+See in this it is one step then one step in each there is only one step one step
+
+45
+00:03:41,140 --> 00:03:47,760
+How many times this will take one one step total how many steps are there so we are doing it for k times
+
+46
+00:03:47,760 --> 00:03:50,280
+So these are k steps
+
+47
+00:03:52,220 --> 00:03:52,780
+So
+
+48
+00:03:52,780 --> 00:03:59,200
+It means time is k so it depends on the number of steps or the number of levels that this tree is having
+
+49
+00:03:59,200 --> 00:04:05,140
+So that is equal to k see this one time then two time then three time up to k times
+
+50
+00:04:06,940 --> 00:04:10,960
+Right and we know that n by 2 power k is equals to 1
+
+51
+00:04:10,960 --> 00:04:15,200
+Since n by 2 power k is equals to 1
+
+52
+00:04:15,200 --> 00:04:20,040
+Then this is n is equals to 2 power k then what is k?
+
+53
+00:04:20,280 --> 00:04:24,420
+k is equals to log n base 2
+
+54
+00:04:25,360 --> 00:04:31,180
+You send this power base to this side. So it becomes log n base 2
+
+55
+00:04:31,800 --> 00:04:36,020
+See, I'll write here if 2 power 5 is
+
+56
+00:04:36,640 --> 00:04:37,140
+32
+
+57
+00:04:37,800 --> 00:04:42,620
+Then 5 is equals to log 32 base 2
+
+58
+00:04:44,060 --> 00:04:46,100
+Log 32 base 2
+
+59
+00:04:46,100 --> 00:04:54,620
+Right, so it means if you have a power b is equals to c then b is equals to log
+
+60
+00:04:54,620 --> 00:04:56,820
+c base a
+
+61
+00:04:56,820 --> 00:05:00,620
+So same way 2 power k is equals to n
+
+62
+00:05:01,640 --> 00:05:08,280
+2 power k is equals to n then k is equals to log n base 2 log n base 2
+
+63
+00:05:08,280 --> 00:05:14,380
+So that's it. How many steps it is taking k steps. So what is the time taken?
+
+64
+00:05:14,380 --> 00:05:19,080
+Log n k k is log n so the answer for this is
+
+65
+00:05:19,080 --> 00:05:23,640
+Order of log n or say big O of log n
+
+66
+00:05:25,660 --> 00:05:32,040
+So that's it this is using tree method now, let us solve the same thing using substitution method
+
+67
+00:05:32,740 --> 00:05:34,740
+Let us solve this by substitution
+
+68
+00:05:38,180 --> 00:05:40,500
+T n is equals to
+
+69
+00:05:41,480 --> 00:05:43,480
+T n by 2
+
+70
+00:05:43,480 --> 00:05:46,330
+Plus 1 this is the first equation
+
+71
+00:05:47,160 --> 00:05:55,380
+Then what is T n by 2? See since T n is equals to T n by 2 plus 1
+
+72
+00:05:55,380 --> 00:06:04,140
+Then T n by 2 will be what T n by 2 by 2 so n by 2 square plus 1
+
+73
+00:06:06,280 --> 00:06:09,660
+So we can substitute this one here
+
+74
+00:06:10,540 --> 00:06:17,940
+So this becomes what T n is equals to T n by 2 square plus 1
+
+75
+00:06:19,800 --> 00:06:23,140
+This one then plus 1 as it is
+
+76
+00:06:23,780 --> 00:06:30,600
+T n is equals to T n by 2 square plus 1 plus 1 2
+
+77
+00:06:30,600 --> 00:06:36,060
+I'm adding them because these are just constant values 1 1 so I'm adding them
+
+78
+00:06:36,060 --> 00:06:38,780
+So it means in the next step what I get
+
+79
+00:06:40,280 --> 00:06:46,350
+This is second one. So it means in next step what I get T n is equals to
+
+80
+00:06:46,840 --> 00:06:49,800
+T n by 2 cube
+
+81
+00:06:50,620 --> 00:06:52,000
+plus 3
+
+82
+00:06:56,100 --> 00:06:59,520
+If we continue doing this then what I get
+
+83
+00:07:00,240 --> 00:07:04,460
+T n is equals to T n by 2 power k
+
+84
+00:07:05,960 --> 00:07:07,360
+plus k
+
+85
+00:07:08,500 --> 00:07:09,700
+Fourth equation
+
+86
+00:07:12,500 --> 00:07:15,620
+T n is equals to T n by 2 power k plus k
+
+87
+00:07:15,620 --> 00:07:22,260
+T n is equals to T n by 2 power k plus k
+
+88
+00:07:23,120 --> 00:07:30,700
+Now we assume that n by 2 power k has became 1 that is n is equals to 1 so we assume this one
+
+89
+00:07:32,060 --> 00:07:38,700
+n by 2 power k is equals to 1 because we are reducing it and reducing it up to 1
+
+90
+00:07:38,700 --> 00:07:45,180
+So this has become 1 so therefore n is equals to 2 power k and
+
+91
+00:07:45,700 --> 00:07:48,480
+k is equals to log n
+
+92
+00:07:51,800 --> 00:07:56,120
+Now take that one T n is equals to T
+
+93
+00:07:57,040 --> 00:08:00,980
+1 plus what is k log n
+
+94
+00:08:02,160 --> 00:08:06,580
+T n is equals to what is the T 1 T 1 is 1
+
+95
+00:08:07,240 --> 00:08:09,360
+1 plus log n
+
+96
+00:08:10,000 --> 00:08:14,260
+That's it. This is theta or big O of n
+
+97
+00:08:17,280 --> 00:08:19,960
+So we got the same answer
+
+98
+00:08:19,960 --> 00:08:24,260
+So that's it this form of equation recurrence relation
+
+99
+00:08:24,260 --> 00:08:26,500
+We are getting the answer as log n
+
+100
+00:08:26,500 --> 00:08:31,660
+So we have solved using tree method as well as substitute substitution or induction method
+
+101
+00:08:31,660 --> 00:08:37,080
+And we also have a master theorem for this one. So we will see few recurrence relations
+
+102
+00:08:37,080 --> 00:08:39,500
+So then we will see Masters theorem for this one
+

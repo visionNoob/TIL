@@ -1,0 +1,368 @@
+1
+00:00:00,000 --> 00:00:06,360
+Hi, now one more recurrence relation I'll solve I have not written any algorithm directly
+
+2
+00:00:06,360 --> 00:00:14,240
+I have taken a recurrence relation and this is dividing function tn is divided. I'll solve this using
+
+3
+00:00:14,760 --> 00:00:16,420
+recursion tree method
+
+4
+00:00:18,700 --> 00:00:20,140
+See tn
+
+5
+00:00:21,280 --> 00:00:23,660
+There are two steps in this one
+
+6
+00:00:24,480 --> 00:00:26,420
+tn by 2 and
+
+7
+00:00:27,280 --> 00:00:28,040
+n
+
+8
+00:00:28,040 --> 00:00:33,100
+n is the time taken in this step plus the time taken here also
+
+9
+00:00:33,520 --> 00:00:41,560
+Then what this will be this will be taking n by 2 time and also it will be tn by 2 square
+
+10
+00:00:42,760 --> 00:00:49,040
+Then what this will be it will be taking n by 2 square time
+
+11
+00:00:50,300 --> 00:00:51,060
+and
+
+12
+00:00:51,060 --> 00:00:54,060
+tn by 2 cube
+
+13
+00:00:54,740 --> 00:00:56,720
+This way I'll be go on reducing
+
+14
+00:00:57,900 --> 00:01:03,540
+I'll be go on reducing. How long how long and for k times
+
+15
+00:01:04,520 --> 00:01:09,070
+n by 2 power k times. I'll repeat until here
+
+16
+00:01:10,820 --> 00:01:13,600
+Then when it is n by 2 power k
+
+17
+00:01:13,600 --> 00:01:19,160
+I assume that this has became 1 because what is the smaller value I have n equal to 1
+
+18
+00:01:19,160 --> 00:01:23,000
+So I assume that I have reduced it up to 1
+
+19
+00:01:23,800 --> 00:01:25,360
+Now what this will be
+
+20
+00:01:26,220 --> 00:01:30,140
+If I take these times and add them in each step
+
+21
+00:01:30,140 --> 00:01:34,520
+So it will be n and it is n by 2
+
+22
+00:01:34,520 --> 00:01:42,100
+It's n by 2 square and goes on to n by 2 power k
+
+23
+00:01:45,740 --> 00:01:50,240
+Right see the last step will be n by 2 power k, right
+
+24
+00:01:50,240 --> 00:01:53,560
+See, this is n cube and this is n square
+
+25
+00:01:53,560 --> 00:01:56,440
+So this will be last will be 2 power k minus 1
+
+26
+00:01:56,440 --> 00:02:02,220
+So for this some something will be there some function will be there here and it will be n by 2 power
+
+27
+00:02:02,220 --> 00:02:06,720
+k minus 1 and when it is n by 2 power k it stops, so
+
+28
+00:02:07,320 --> 00:02:12,580
+Approximately I am taking it till n by 2 power k or k minus 1 also I can take it
+
+29
+00:02:13,620 --> 00:02:15,920
+Now, let me add all these
+
+30
+00:02:15,920 --> 00:02:23,540
+To get the answer. So this is n plus n by 2 plus n by 2 square
+
+31
+00:02:23,560 --> 00:02:26,520
+plus n by 2 cube
+
+32
+00:02:28,420 --> 00:02:32,000
+Plus goes on to n by 2 power k
+
+33
+00:02:32,860 --> 00:02:35,220
+This will be Tn
+
+34
+00:02:36,500 --> 00:02:39,920
+What this is equal to n common
+
+35
+00:02:40,680 --> 00:02:47,800
+1 plus 1 by 2 plus 1 by 2 square plus 1 by 2 cube plus goes on to
+
+36
+00:02:47,800 --> 00:02:50,540
+1 by 2 power k
+
+37
+00:02:53,840 --> 00:02:57,060
+This is n sigma
+
+38
+00:02:59,260 --> 00:03:05,840
+1 by 2 power i, i takes the values from 0 to k
+
+39
+00:03:06,880 --> 00:03:11,380
+What is this equal to this will be equal to 1?
+
+40
+00:03:12,400 --> 00:03:18,760
+Remember this this will be equal to 1 so this is n into 1 so Tn answer is n
+
+41
+00:03:19,360 --> 00:03:26,200
+So this is big O of n or theta of n anything you can say for explanation
+
+42
+00:03:26,200 --> 00:03:27,640
+I'll take one circle
+
+43
+00:03:29,320 --> 00:03:30,080
+and
+
+44
+00:03:30,080 --> 00:03:33,000
+This is half of a circle
+
+45
+00:03:33,880 --> 00:03:35,400
+this is
+
+46
+00:03:35,400 --> 00:03:37,160
+1 4th of a circle
+
+47
+00:03:37,160 --> 00:03:40,160
+This is 1 8th of a circle
+
+48
+00:03:40,160 --> 00:03:46,340
+This is 1 16th of a circle if I continue goes on so it means 1 by 2 plus
+
+49
+00:03:46,340 --> 00:03:48,840
+1 by 2 square plus
+
+50
+00:03:48,840 --> 00:03:54,760
+1 by 2 cube plus 1 by 2 power 4 plus goes on up to
+
+51
+00:03:54,760 --> 00:04:00,140
+Infinity if I add all these pieces it is equal to one circle is one circle
+
+52
+00:04:02,560 --> 00:04:08,280
+Half 1 4th 1 8 and all if you add them up to infinity is 1 so this is
+
+53
+00:04:08,280 --> 00:04:14,940
+Approximately equal to 1 so we round it up to 1 n into 1 so it is order of n
+
+54
+00:04:17,020 --> 00:04:23,120
+So this is one method now next method. I'll use substitution method now using substitution method
+
+55
+00:04:26,740 --> 00:04:28,550
+Tn is equals to
+
+56
+00:04:30,140 --> 00:04:32,170
+Tn by 2 plus n
+
+57
+00:04:33,400 --> 00:04:37,600
+If I use this method also, I will get the same series in the tree
+
+58
+00:04:37,600 --> 00:04:42,420
+I was getting it vertically and and I was adding it here. I will get it horizontally
+
+59
+00:04:42,940 --> 00:04:43,800
+the same
+
+60
+00:04:46,340 --> 00:04:47,620
+What is the Tn by 2?
+
+61
+00:04:48,640 --> 00:04:50,580
+this will be
+
+62
+00:04:51,500 --> 00:04:56,410
+Tn by 2 square plus n by 2 and
+
+63
+00:04:57,640 --> 00:04:58,740
+This is n
+
+64
+00:04:59,640 --> 00:05:01,940
+If I open it
+
+65
+00:05:01,940 --> 00:05:10,080
+Tn by 2 square plus n by 2 plus n if this was the first equation
+
+66
+00:05:10,080 --> 00:05:11,940
+Then this is the second equation
+
+67
+00:05:13,900 --> 00:05:19,740
+I'm not showing you here how to substitute and get the next expression next equation
+
+68
+00:05:20,260 --> 00:05:24,440
+Already we have done in previous recurrence relation. Maybe you have watched them
+
+69
+00:05:27,080 --> 00:05:27,760
+Next
+
+70
+00:05:28,740 --> 00:05:34,860
+If I substitute this further, then this will be Tn by 2 cube plus n
+
+71
+00:05:35,520 --> 00:05:38,660
+by 2 square plus n by 2
+
+72
+00:05:38,660 --> 00:05:44,660
+Plus n if I continue for k times, so then it will be
+
+73
+00:05:44,660 --> 00:05:50,680
+Tn by 2 power k plus n by 2 power k minus 1
+
+74
+00:05:51,640 --> 00:05:54,880
+plus n by 2 power k minus 2
+
+75
+00:05:55,500 --> 00:05:58,740
+plus goes on to n by 2 plus n
+
+76
+00:06:00,820 --> 00:06:06,500
+That's it I am getting the same thing what is this equal to this is equal to 1
+
+77
+00:06:07,560 --> 00:06:09,380
+Tn is equals to
+
+78
+00:06:10,640 --> 00:06:13,420
+Tn by 2 power k plus
+
+79
+00:06:14,660 --> 00:06:17,140
+n by 2 power k minus 1
+
+80
+00:06:17,140 --> 00:06:22,080
+plus goes on to n by 2 square plus n by 2
+
+81
+00:06:23,220 --> 00:06:26,320
+plus n we assume that
+
+82
+00:06:28,320 --> 00:06:28,960
+n
+
+83
+00:06:28,960 --> 00:06:34,340
+By 2 power k is equals to 1 we say that this we have reached till 1 and equal to 1
+
+84
+00:06:34,340 --> 00:06:40,160
+Therefore n equal to 2 power k and k is equals to log n
+
+85
+00:06:41,400 --> 00:06:44,820
+If I substitute this in this recurrence relation
+
+86
+00:06:44,820 --> 00:06:51,760
+Then this is a T1 plus n is a common 1 by 2 power k minus 1 plus 1 by 2 power
+
+87
+00:06:51,760 --> 00:06:56,220
+k minus 2 plus goes on to 1 by 2 plus 1
+
+88
+00:06:57,320 --> 00:07:03,340
+Then what is this approximately equal to Tn plus this is 1 plus n
+
+89
+00:07:03,340 --> 00:07:08,780
+And this whole thing is 1 and this plus 1 is also there plus 1
+
+90
+00:07:08,780 --> 00:07:11,420
+So this is 1 plus 2n
+
+91
+00:07:15,400 --> 00:07:18,400
+This is big O of n
+
+92
+00:07:21,160 --> 00:07:24,360
+Now the answer is same order of n
+

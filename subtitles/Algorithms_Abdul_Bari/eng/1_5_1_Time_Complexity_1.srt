@@ -1,0 +1,680 @@
+1
+00:00:00,000 --> 00:00:07,240
+Welcome back. I will take few pieces of code and show you how to analyse them, how to find out the time complexity for them.
+
+2
+00:00:07,800 --> 00:00:14,120
+This is a simple loop. I am not writing a complete algorithm. I have just written a piece of code in which one statement is there.
+
+3
+00:00:14,680 --> 00:00:19,300
+Now we are already familiar with this one. We know that this will execute for n plus 1 time.
+
+4
+00:00:19,660 --> 00:00:23,440
+And this will execute for n time. We don't want this time.
+
+5
+00:00:24,540 --> 00:00:27,660
+Because anyway when we are writing order of, we are writing a degree.
+
+6
+00:00:27,660 --> 00:00:31,640
+So this will not affect the degree at all. So it will be same only.
+
+7
+00:00:31,980 --> 00:00:35,080
+So just we need to know the statement how many times it is executing.
+
+8
+00:00:35,720 --> 00:00:38,100
+So that's it. So this is order of n.
+
+9
+00:00:40,580 --> 00:00:43,100
+You can avoid this one. Skip this one.
+
+10
+00:00:47,980 --> 00:00:48,220
+Next.
+
+11
+00:00:49,160 --> 00:00:59,580
+If suppose this loop is starting from n and the condition is greater than 1 or 0 and this is getting subtracted.
+
+12
+00:00:59,580 --> 00:01:03,080
+So this loop is decrementing.
+
+13
+00:01:03,800 --> 00:01:07,640
+Then also this statement will execute for n times.
+
+14
+00:01:07,860 --> 00:01:08,660
+And it's order of n.
+
+15
+00:01:09,920 --> 00:01:16,440
+Whether you go from 1 to 10, 10 steps or come from 10 to 1, then also 10 steps.
+
+16
+00:01:17,020 --> 00:01:20,520
+So you go from 1 to 10 or 10 to 1. Same number of steps.
+
+17
+00:01:20,620 --> 00:01:24,940
+So that's how n to 0 it is. So it's also order of n.
+
+18
+00:01:26,100 --> 00:01:34,660
+If this is starting from 1 and condition is less than n and i is being incremented by 2.
+
+19
+00:01:36,520 --> 00:01:41,180
+So this statement will not repeat for n times but half of the n times.
+
+20
+00:01:42,280 --> 00:01:43,020
+n by 2.
+
+21
+00:01:45,180 --> 00:01:53,000
+If it is n by 2 also, if I say function is n by 2, what is the degree of polynomial?
+
+22
+00:01:53,000 --> 00:01:56,440
+n only. So it's order of n again.
+
+23
+00:01:57,360 --> 00:01:59,960
+So in this case also it's order of n.
+
+24
+00:02:00,860 --> 00:02:05,860
+Even if it is incrementing by 20, then this is 20.
+
+25
+00:02:06,200 --> 00:02:09,620
+Degree of a polynomial is n. So this is also order of n.
+
+26
+00:02:10,720 --> 00:02:17,640
+So n by anything, whatever the number of times it is incrementing, the time will be same.
+
+27
+00:02:18,440 --> 00:02:18,940
+Next.
+
+28
+00:02:19,380 --> 00:02:20,960
+We are already familiar with this one.
+
+29
+00:02:20,960 --> 00:02:25,320
+These are two loops, nested loop, one inside another.
+
+30
+00:02:25,880 --> 00:02:28,340
+And this we know this will execute for n times.
+
+31
+00:02:28,880 --> 00:02:32,120
+So this is also n times and this is also n times.
+
+32
+00:02:32,580 --> 00:02:33,620
+Actually it's n plus 1.
+
+33
+00:02:34,300 --> 00:02:39,740
+But what about this one? Again this will repeat for n plus 1 times and this will repeat for n times.
+
+34
+00:02:40,220 --> 00:02:44,620
+And this is order of n square.
+
+35
+00:02:46,480 --> 00:02:49,340
+The next is again nested for loop.
+
+36
+00:02:49,340 --> 00:02:52,540
+This looks similar to the previous one but not.
+
+37
+00:02:53,340 --> 00:02:55,720
+See, i takes value 0, i less than n.
+
+38
+00:02:55,980 --> 00:02:58,140
+But j takes value j less than i.
+
+39
+00:02:59,100 --> 00:03:00,000
+So here is the difference.
+
+40
+00:03:00,940 --> 00:03:06,040
+So let us analyse this by tracing this one and find out how much time it is taking.
+
+41
+00:03:06,960 --> 00:03:12,380
+So for this, I will take i value and j value and trace them.
+
+42
+00:03:14,060 --> 00:03:14,720
+Let us start.
+
+43
+00:03:14,720 --> 00:03:16,800
+Initially i is 0.
+
+44
+00:03:17,660 --> 00:03:22,020
+When i is 0, j starts from 0 and 0 less than 0?
+
+45
+00:03:22,200 --> 00:03:25,000
+No, it will not execute for any number of times.
+
+46
+00:03:25,460 --> 00:03:29,160
+So here I have to find out how many times this statement is executed.
+
+47
+00:03:29,920 --> 00:03:31,320
+So number of times.
+
+48
+00:03:32,380 --> 00:03:34,820
+So it will not execute at all, so 0 times.
+
+49
+00:03:36,180 --> 00:03:37,120
+Then this loop ends.
+
+50
+00:03:37,780 --> 00:03:39,340
+Again, i plus plus.
+
+51
+00:03:40,100 --> 00:03:41,180
+i becomes 1.
+
+52
+00:03:41,660 --> 00:03:43,240
+i is less than n, suppose.
+
+53
+00:03:43,240 --> 00:03:44,720
+It is entered inside.
+
+54
+00:03:45,360 --> 00:03:46,220
+Then again this loop.
+
+55
+00:03:46,740 --> 00:03:47,000
+0.
+
+56
+00:03:47,380 --> 00:03:48,460
+0 is less than i.
+
+57
+00:03:48,840 --> 00:03:50,400
+Yes, for 0 it will execute.
+
+58
+00:03:51,380 --> 00:03:52,340
+Then j plus plus.
+
+59
+00:03:52,940 --> 00:03:54,140
+j is 1.
+
+60
+00:03:54,520 --> 00:03:55,760
+1 is not less than i.
+
+61
+00:03:55,980 --> 00:03:57,700
+So for 1, it will not execute.
+
+62
+00:03:58,240 --> 00:03:59,820
+So how many times it has executed?
+
+63
+00:04:00,180 --> 00:04:01,200
+One time.
+
+64
+00:04:04,100 --> 00:04:05,440
+Then goes up again.
+
+65
+00:04:06,300 --> 00:04:07,040
+i plus plus.
+
+66
+00:04:07,620 --> 00:04:08,700
+i becomes 2.
+
+67
+00:04:09,200 --> 00:04:11,540
+Then j will execute for 0, 1.
+
+68
+00:04:11,540 --> 00:04:13,360
+And when it becomes 2, it will stop.
+
+69
+00:04:15,460 --> 00:04:17,540
+So this will repeat for 2 times.
+
+70
+00:04:18,060 --> 00:04:22,740
+And when i is 3, j will take 0, 1, 2 and 3.
+
+71
+00:04:23,200 --> 00:04:24,880
+So this will repeat for 3 times.
+
+72
+00:04:25,420 --> 00:04:26,800
+And this process continues.
+
+73
+00:04:27,660 --> 00:04:30,160
+See, when i was 0, it was never executed.
+
+74
+00:04:30,420 --> 00:04:33,040
+When i was 1, it was executed for one time.
+
+75
+00:04:33,240 --> 00:04:33,920
+This is a statement.
+
+76
+00:04:34,400 --> 00:04:38,580
+i was 2, it was executed for 2 times, 3, 3 times, so on.
+
+77
+00:04:39,640 --> 00:04:40,160
+So on.
+
+78
+00:04:40,160 --> 00:04:40,760
+Up to what?
+
+79
+00:04:40,760 --> 00:04:41,500
+n.
+
+80
+00:04:42,220 --> 00:04:47,180
+So total, when it is n, how many times this will execute?
+
+81
+00:04:47,480 --> 00:04:48,160
+n times.
+
+82
+00:04:49,020 --> 00:04:51,100
+When i was 3, so 3 times.
+
+83
+00:04:51,740 --> 00:04:56,160
+So if it is reaching till n, actually it is less than n, but let us say n.
+
+84
+00:04:56,480 --> 00:04:59,060
+It is reaching till n, so it will execute for 10 times.
+
+85
+00:04:59,620 --> 00:05:01,900
+So total how many times it has executed?
+
+86
+00:05:03,300 --> 00:05:03,960
+This one.
+
+87
+00:05:07,900 --> 00:05:08,140
+Right?
+
+88
+00:05:08,640 --> 00:05:12,160
+So I am assuming that it is going till n, though it is not till n.
+
+89
+00:05:12,160 --> 00:05:13,460
+It is less than n.
+
+90
+00:05:13,500 --> 00:05:13,900
+How many times?
+
+91
+00:05:14,580 --> 00:05:18,060
+1 plus 2 plus 3 plus goes on to n.
+
+92
+00:05:18,600 --> 00:05:22,100
+This is nothing but n into n plus 1 by 2.
+
+93
+00:05:24,740 --> 00:05:26,360
+What is the degree of this one?
+
+94
+00:05:27,100 --> 00:05:32,940
+f of n is n squared plus 1 by 2, degrees squared.
+
+95
+00:05:33,400 --> 00:05:35,500
+So order of n squared.
+
+96
+00:05:38,000 --> 00:05:41,280
+So the time complexity is order of n squared.
+
+97
+00:05:41,280 --> 00:05:46,320
+Though this is not similar to the previous one, but if you analyze, the answer is coming
+
+98
+00:05:46,320 --> 00:05:47,820
+to n squared only.
+
+99
+00:05:48,280 --> 00:05:50,420
+The degree of a polynomial is n squared only.
+
+100
+00:05:51,440 --> 00:05:57,480
+Next code is, here p is initialized to 0, and there is a loop that is not going
+
+101
+00:05:57,480 --> 00:05:58,840
+to execute for n times.
+
+102
+00:05:59,340 --> 00:05:59,940
+See this p.
+
+103
+00:06:00,280 --> 00:06:02,100
+p is less than equal to n.
+
+104
+00:06:02,420 --> 00:06:04,340
+It is not i less than equal to n.
+
+105
+00:06:04,480 --> 00:06:05,640
+So the condition is different.
+
+106
+00:06:06,320 --> 00:06:07,020
+Then what is p?
+
+107
+00:06:07,020 --> 00:06:11,040
+p is initially 0 and every time i is added to p.
+
+108
+00:06:11,520 --> 00:06:13,900
+So now we don't know how many times it is going to execute.
+
+109
+00:06:15,240 --> 00:06:15,800
+Let us analyze.
+
+110
+00:06:16,660 --> 00:06:19,400
+I will take i value and p value.
+
+111
+00:06:19,720 --> 00:06:22,280
+Initially this is 0 and this is 1.
+
+112
+00:06:23,840 --> 00:06:25,320
+So what happens first time?
+
+113
+00:06:25,800 --> 00:06:28,260
+This 1 is added and it becomes 1.
+
+114
+00:06:28,640 --> 00:06:29,840
+The next time it will be 2.
+
+115
+00:06:30,300 --> 00:06:31,500
+So it will be 1 plus 2.
+
+116
+00:06:32,160 --> 00:06:32,960
+So it will be 3.
+
+117
+00:06:32,960 --> 00:06:38,020
+The next time, i will be 3 and this will be 1 plus 2 plus 3.
+
+118
+00:06:38,640 --> 00:06:44,020
+Then i will be 4, it will be 1 plus 2 plus 3 plus 4 goes on.
+
+119
+00:06:47,420 --> 00:06:49,420
+How many times it is going to execute?
+
+120
+00:06:49,980 --> 00:06:52,200
+It is going to execute for k times.
+
+121
+00:06:54,980 --> 00:06:56,180
+So what this will be?
+
+122
+00:06:56,700 --> 00:07:01,560
+1 plus 2 plus 3 plus 4 plus goes on to k times.
+
+123
+00:07:01,560 --> 00:07:03,120
+Why i wrote k here?
+
+124
+00:07:03,460 --> 00:07:07,080
+It is not reaching, it is not repeating for n times.
+
+125
+00:07:07,600 --> 00:07:11,600
+Definitely it is repeating for some number of times that we don't know.
+
+126
+00:07:11,960 --> 00:07:14,860
+We are sure that it will not execute for n times.
+
+127
+00:07:15,140 --> 00:07:16,000
+Then how many times?
+
+128
+00:07:16,460 --> 00:07:17,680
+Because the condition is different.
+
+129
+00:07:18,080 --> 00:07:21,020
+So i said let it be k and let us find out that k.
+
+130
+00:07:22,180 --> 00:07:26,120
+So if it is repeating for k times, then what is the condition?
+
+131
+00:07:27,640 --> 00:07:32,560
+We assume that p has become greater than n.
+
+132
+00:07:32,980 --> 00:07:35,340
+So when p became greater than n, it is stopping.
+
+133
+00:07:35,960 --> 00:07:36,780
+We assume this.
+
+134
+00:07:37,600 --> 00:07:42,560
+As long as p is less than n, but when it is repeating, so when p becomes greater than n, it is stopping.
+
+135
+00:07:46,120 --> 00:07:47,620
+Since p is what?
+
+136
+00:07:48,220 --> 00:07:53,500
+Cp, it is k into k plus 1 by 2.
+
+137
+00:07:54,800 --> 00:07:57,240
+p is k into k plus 1 by 2.
+
+138
+00:07:57,600 --> 00:07:58,840
+So what is the condition?
+
+139
+00:07:59,720 --> 00:08:04,280
+k into k plus 1 by 2 is greater than n.
+
+140
+00:08:05,620 --> 00:08:10,760
+So when it will stop, when k into k plus 1 by 2 has become greater than n, it will stop.
+
+141
+00:08:11,640 --> 00:08:12,420
+So what is k?
+
+142
+00:08:14,360 --> 00:08:17,340
+Roughly we assume it as k squared.
+
+143
+00:08:18,600 --> 00:08:19,300
+So what is k?
+
+144
+00:08:19,940 --> 00:08:22,980
+k is root n.
+
+145
+00:08:24,440 --> 00:08:25,900
+k is root n.
+
+146
+00:08:26,220 --> 00:08:32,020
+So this loop will execute for order of root n times.
+
+147
+00:08:34,440 --> 00:08:35,640
+Let me show you quickly.
+
+148
+00:08:36,140 --> 00:08:37,060
+i is sign 1.
+
+149
+00:08:37,680 --> 00:08:39,240
+i p is less than equal to n.
+
+150
+00:08:39,440 --> 00:08:40,040
+i plus plus.
+
+151
+00:08:40,460 --> 00:08:42,400
+This is not i less than equal to n.
+
+152
+00:08:42,400 --> 00:08:45,080
+So we don't know how many times it is repeating.
+
+153
+00:08:47,380 --> 00:08:49,200
+i is here, p is here.
+
+154
+00:08:49,540 --> 00:08:53,900
+So i values are incrementing and every time i is added to p.
+
+155
+00:08:54,440 --> 00:08:55,800
+So we don't know how many times.
+
+156
+00:08:56,020 --> 00:08:57,240
+So let us say k times.
+
+157
+00:08:57,980 --> 00:09:00,420
+And this will be 1 plus 2 plus 2 to k.
+
+158
+00:09:04,360 --> 00:09:04,800
+Right?
+
+159
+00:09:06,540 --> 00:09:10,660
+So that k is p is k into k plus 1 by 2 now.
+
+160
+00:09:10,660 --> 00:09:14,340
+So we know that this will repeat as long as p is less than equal to n.
+
+161
+00:09:14,440 --> 00:09:16,760
+So it will stop when p becomes greater than n.
+
+162
+00:09:16,920 --> 00:09:18,820
+So when p becomes greater than n, it will stop.
+
+163
+00:09:19,080 --> 00:09:21,340
+So k into k plus 1 by 2 becomes greater than n.
+
+164
+00:09:21,440 --> 00:09:22,060
+It will stop.
+
+165
+00:09:22,680 --> 00:09:25,620
+So this is k squared and k is root n.
+
+166
+00:09:26,980 --> 00:09:29,400
+In the next video you will find more examples.
+
+167
+00:09:30,960 --> 00:09:32,700
+So different type of codes.
+
+168
+00:09:32,920 --> 00:09:35,440
+I will show you and i will show you how to analyze them.
+
+169
+00:09:36,520 --> 00:09:38,960
+So this is how by tracing you can analyze them.
+
+170
+00:09:38,960 --> 00:09:43,220
+So in the other video, next video also you can find few more algorithms with tracing.
+

@@ -56,3 +56,27 @@ class Solution:
 # Memory Limit Exceeded
 # Time: O(2^n)
 # Space: O(n)
+
+
+# Method3: 0/1 Knapsack Dynamic Programming
+class Solution:
+    def canPartition(self, nums: List[int]) -> bool:
+        target = sum(nums)
+        if target % 2 != 0:
+            return False
+
+        target = int(target / 2.0)
+
+        dp = [True] + [False] * target
+        for num in nums:
+            for i in range(len(dp) - 1, num - 1, -1):
+                dp[i] = dp[i - num] | dp[i]
+
+            if dp[-1] == True:
+                return True
+
+        return False
+
+# Success
+# Time: O(n * target)
+# Space: O(target)
